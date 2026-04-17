@@ -1,0 +1,157 @@
+/* Variables de color */
+:root {
+    --primary-pink: #f8d7da;
+    --dark-pink: #d4a5a9;
+    --text-color: #4a4a4a;
+    --white: #ffffff;
+    --gold: #c5a059;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #fffafb;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header & Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1350&q=80'); /* Imagen de fondo genérica de maquillaje */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--text-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--primary-pink);
+    color: var(--text-color);
+}
+
+/* Secciones Generales */
+section {
+    padding: 80px 10% ;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-bottom: 4px solid var(--primary-pink);
+}
+
+/* Asesoría - Pasos */
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.step span {
+    font-size: 3rem;
+    color: var(--primary-pink);
+    font-family: 'Playfair Display', serif;
+    display: block;
+}
+
+/* Promo Banner */
+.promo-banner {
+    margin-top: 60px;
+    background-color: var(--primary-pink);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item {
+    margin: 20px;
+}
